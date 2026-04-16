@@ -68,7 +68,7 @@ function clamp(n: number, min: number, max: number) {
 }
 
 function escapeAhkText(value: string) {
-  return value.replaceAll('"', '`"');
+  return value.replace(/"/g, '`"');
 }
 
 function makeAhk(scenarios: Scenario[], settings: GlobalSettings) {
